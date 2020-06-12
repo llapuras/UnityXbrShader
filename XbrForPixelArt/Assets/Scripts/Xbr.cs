@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Xbr2 : MonoBehaviour
+public class Xbr : MonoBehaviour
 {
     [Range(1.0f, 256)]
     public int v_resolution = 224;
 
     private int scale = 4;
-    private Vector2 texSize = new Vector2(256, 224);
+    private Vector2 texSize = new Vector2(200, 200);
     private Material mat;
     public Shader sh;
 
@@ -29,6 +29,7 @@ public class Xbr2 : MonoBehaviour
 
     void OnRenderImage(RenderTexture reTex, RenderTexture desTex)
     {
+
         desTex = RenderTexture.GetTemporary((int)(texSize.x * scale), (int)(texSize.y * scale), 0);
 
         reTex.filterMode = FilterMode.Point;
@@ -41,6 +42,7 @@ public class Xbr2 : MonoBehaviour
         GetComponent<Camera>().targetTexture = null;
         Graphics.Blit(desTex, null as RenderTexture);
 
+        //记得释放内存，不然电脑会炸
         RenderTexture.ReleaseTemporary(desTex);
         reTex.DiscardContents();
     }
