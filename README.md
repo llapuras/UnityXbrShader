@@ -1,4 +1,5 @@
 # Xbr
- xbr shader for pixel art
 
-![](https://github.com/llapuras/XbrShader/blob/master/pixelize.gif)
+像素画转换xbr算法。
+
+![](https://github.com/llapuras/XbrShader/blob/master/pixelate.gif)
