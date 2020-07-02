@@ -26,8 +26,3 @@ Unity用像素画转换为非像素画的xbr算法。
 | 7  | 148 | 1 |
 - 如果需要调整scale，例如scale x 2，那么v_resolution则需要除以2，保证乘积不变
 - 如果单位像素长度为1，通常需要放大scale，否则根据xbr将一个像素划分为5x5进行处理的做法，最后得到的只会是一团糊糊
-
-<<<<<<< HEAD
-![](https://github.com/llapuras/XbrShader/blob/master/display.png)
-=======
->>>>>>> d1e6767dedb306baa513b9a59aed1e7df2cdd532
