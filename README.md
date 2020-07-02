@@ -6,7 +6,7 @@ Unity用像素画转换为非像素画的xbr算法。
 
 效果如下：
 
-![](https://user-images.githubusercontent.com/17641368/86329858-63d21b00-bc79-11ea-818a-380b8e2ff1bc.png)
+![](https://github.com/llapuras/XbrShader/blob/master/display.png)
 
 
 # 使用tips
